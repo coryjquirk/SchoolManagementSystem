@@ -1,7 +1,17 @@
 package jpa.mainrunner;
 
+import jpa.service.CourseService;
+
 public class SMSRunner {
+
+    private static CourseService courseService;
+
     public static void main(String[] args) {
+        courseService = new CourseService();
+
+        //just a first method to test out some output from the database.
+        courseService.getAllCourses();
+
         //main -
         //-This method displays and prompts the user to select one of the
         //following with the option:

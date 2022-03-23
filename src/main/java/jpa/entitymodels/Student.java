@@ -1,14 +1,13 @@
 package jpa.entitymodels;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import org.hibernate.annotations.NamedQuery;
+
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name = "STUDENTS")
+//@NamedQuery(name = "validatestudent", query = "SELECT s FROM Student s WHERE s.sEmail = :email AND s.sPass = :password")
 public class Student {
     private String sEmail;
     private String sName;
@@ -57,7 +56,10 @@ public class Student {
         this.sPass = sPass;
     }
 
-    //will write join here `@ManyToMany` etc
+    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinTable(name = "student_course",
+            joinColumns = @JoinColumn(name = "student_email", referencedColumnName = "email"),
+            inverseJoinColumns = @JoinColumn(name = "course_id", referencedColumnName = "id"))
     public List<Course> getCourses() {
         return sCourses;
     }

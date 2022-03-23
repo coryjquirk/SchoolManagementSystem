@@ -26,8 +26,8 @@ public class Course {
         this.students = new ArrayList<>();
     }
 
-    @Column(name="id", unique = true, nullable = false)
     @Id
+    @Column(name="id", unique = true, nullable = false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public int getcId() {
         return cId;
@@ -55,7 +55,7 @@ public class Course {
         this.cInstructorName = cInstructorName;
     }
 
-    //will write join here `@ManyToMany` etc
+    @ManyToMany(mappedBy = "courses")
     public List<Student> getStudents() {
         return students;
     }
