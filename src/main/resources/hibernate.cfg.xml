@@ -6,7 +6,7 @@
     <session-factory>
         <property name="hibernate.hbm2ddl.auto"> update </property>
         <property name="connection.driver_class">org.mariadb.jdbc.Driver</property>
-        <property name="connection.url">jdbc:mysql://localhost:3306/sms</property>
+        <property name="connection.url">jdbc:mysql://localhost:3305/sms</property>
         <property name="connection.username">root</property>
         <property name="connection.password">password</property>
 
