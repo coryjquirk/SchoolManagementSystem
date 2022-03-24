@@ -1,0 +1,50 @@
+3/23/2022
+------
+Something's not right, let's try again.
+Please select an option: 
+1. Student Login 
+2. Quit
+Enter an integer to choose an option.
+Please try again.
+Please select an option: 
+1. Student Login 
+2. Quit
+1
+Log in: 
+Enter your email: 
+---
+Your currently enrolled courses: 
+COURSE ID            COURSE NAME                    INSTRUCTOR NAME     
+1                    English                        Anderea Scamaden    
+3                    Anatomy                        Reynolds Pastor     
+10                   Art                            Kingsly Doxsey      
+5                    Physics                        Dani Swallow        
+3                    Anatomy                        Reynolds Pastor     
+3                    Anatomy                        Reynolds Pastor     
+---
+Please select one of the following: 
+1. Register for course 
+2. View your courses 
+3. Quit
+sdf
+Please enter an integer to choose an option.
+Please select one of the following: 
+1. Register for course 
+2. View your courses 
+3. Quit
+Please enter an integer to choose an option.
+Please select one of the following: 
+1. Register for course 
+2. View your courses 
+3. Quit
+Please enter an integer to choose an option.
+Please select one of the following: 
+1. Register for course 
+2. View your courses 
+3. Quit
+Please enter an integer to choose an option.
+Please select one of the following: 
+1. Register for course 
+2. View your courses 
+3. Quit
+[... etc]
