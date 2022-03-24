@@ -14,7 +14,7 @@ public class TestGetStudentByEmail {
     }
 
     @Test
-    public void testGetStudentByEmail() {
+    public void TestGetStudentByEmail() {
         Student expected = new Student();
         expected.setStudentEmail("cstartin3@flickr.com");
         expected.setStudentName("Clem Startin");
