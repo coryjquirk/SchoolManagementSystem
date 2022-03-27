@@ -69,6 +69,8 @@ public class StudentService implements StudentDAO{
         Course course = session.get(Course.class, cId);
         if (course == null) {
             System.out.println("Course does not exist");
+        } else if (courses.contains(course)){
+            System.out.println("You are already registered for that course.");
         } else {
             courses.add(course);
             student.setCourses(courses);
